@@ -2,13 +2,13 @@
 
 import React, { useState, useEffect } from "react";
 import { UserButton, useUser } from "@clerk/nextjs";
-import CardInfo from "./_components/CardInfo";
 import { db } from "@/utils/dbConfig";
 import { desc, eq, getTableColumns, sql } from "drizzle-orm";
 import { Budgets, Expenses, Incomes } from "../../../utils/schema";
 import BarChartDashboard from "./_components/BarChartDashboard";
 import ExpenseListTable from "./_components/ExpenseListTable";
 import BudgetItem from "./budgets/_components/BudgetItem";
+import CardInfo from "./_components/CardInfo";
 
 function Dashboard() {
   const { user } = useUser();
@@ -87,7 +87,7 @@ function Dashboard() {
         Here's what's happening with your money. Let's manage your expenses.
       </p>
 
-      <CardInfo budgetList={budgetList} incomeList={incomeList}/>
+      <CardInfo budgetList={budgetList} incomeList={incomeList} />
 
       <div className="grid grid-cols-2 lg:grid-cols-3 mt-8 gap-4">
         <div className="lg:col-span-2">

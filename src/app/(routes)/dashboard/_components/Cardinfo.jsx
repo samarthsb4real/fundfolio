@@ -1,14 +1,9 @@
 import formatNumber from "@/utils";
 import getFinancialAdvice from "@/utils/getFinancialAdvice";
-import {
-  PiggyBank,
-  ReceiptText,
-  Wallet,
-  CircleDollarSign,
-} from "lucide-react";
+import { PiggyBank, ReceiptText, Wallet, CircleDollarSign } from "lucide-react";
 import React, { useEffect, useState } from "react";
 
-function CardInfo({ budgetList, incomeList }) {
+export default function CardInfo({ budgetList, incomeList }) {
   const [totalBudget, setTotalBudget] = useState(0);
   const [totalSpend, setTotalSpend] = useState(0);
   const [totalIncome, setTotalIncome] = useState(0);
@@ -59,7 +54,6 @@ function CardInfo({ budgetList, incomeList }) {
     <div>
       {budgetList?.length > 0 ? (
         <div>
-
           <div className="mt-7 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             <div className="p-7 border rounded-2xl flex items-center justify-between">
               <div>
@@ -110,5 +104,3 @@ function CardInfo({ budgetList, incomeList }) {
     </div>
   );
 }
-
-export default CardInfo;
