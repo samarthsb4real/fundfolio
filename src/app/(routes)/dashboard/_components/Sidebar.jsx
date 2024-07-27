@@ -1,16 +1,18 @@
 import Image from "next/image";
-import { useEffect } from "react";
+import react, { useEffect } from "react";
 import {
   LayoutGrid,
   PiggyBank,
   ReceiptText,
+  LogOutIcon,
   IndianRupee,
   LogOut,
 } from "lucide-react";
+import { ClerkProvider, UserButton } from "@clerk/nextjs";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
-export default function Sidebar() {
+function Sidebar() {
   const menuList = [
     {
       id: 1,
@@ -35,12 +37,6 @@ export default function Sidebar() {
       name: "Expenses",
       icon: ReceiptText,
       path: "/dashboard/expenses",
-    },
-    {
-      id: 5,
-      name: "Logout",
-      icon: LogOut,
-      path: "/",
     },
   ];
 
@@ -80,7 +76,19 @@ export default function Sidebar() {
       <div
         className="fixed bottom-10 p-5 flex gap-2
             items-center"
-      ></div>
+      >
+        <div
+          className="p-5 flex gap-2 items-center
+                    text-gray-500 font-medium
+                    mb-2
+                    cursor-pointer rounded-xl
+                    hover:text-primary hover:bg-red-200 hover:shadow-sm"
+        >
+          <LogOut />
+          Logout
+        </div>
+      </div>
     </div>
   );
 }
+export default Sidebar;

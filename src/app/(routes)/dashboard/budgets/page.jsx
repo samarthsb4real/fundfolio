@@ -1,9 +1,13 @@
-export default function Budgets() {
+import React from "react";
+import BudgetList from "./_components/BudgetList";
+
+function Budget() {
   return (
-    <main>
-      <div className="p-8">
-        <h1 className="font-bold text-4xl">View Budgets</h1>
-      </div>
-    </main>
+    <div className="p-10">
+      <h2 className="font-bold text-3xl">My Budgets</h2>
+      <BudgetList />
+    </div>
   );
 }
+
+export default Budget;

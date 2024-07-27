@@ -10,8 +10,8 @@ export function HeroScrollDemo() {
         titleComponent={
           <>
             <h1 className="text-4xl font-semibold text-black dark:text-white">
-              Save Nicely, Spend Wisely with<br />
-              <span className="text-8xl md:text-[6rem] font-bold mt-1 leading-none">
+              Spend Wisely, Save Nicely with<br />
+              <span className="text-8xl text-blue-600 md:text-[6rem] font-bold mt-1 leading-none">
                 FundFolio
               </span>
             </h1>
@@ -19,7 +19,7 @@ export function HeroScrollDemo() {
         }
       >
         <Image
-          src={`/home.png`}
+          src={`/demo.png`}
           alt="hero"
           height={720}
           width={1400}

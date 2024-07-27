@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "FundFolio",
-  description: "AI-Powered User-friendly Expense Manager",
+  description: "AI-Powered Expense Manager",
 };
 
 export default function RootLayout({ children }) {
