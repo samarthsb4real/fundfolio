@@ -10,8 +10,8 @@ export default function Header() {
         <h1 className="text-2xl font-bold">FundFolio</h1>
       </div>
       <div className="flex flex-row gap-3">
-        <Button variant="outline"><Link>Dashboard</Link></Button>
-        <Button><Link>Get started</Link></Button>
+        <Button variant="outline"><Link href="#">Dashboard</Link></Button>
+        <Button><Link href="#">Get started</Link></Button>
       </div>
     </section>
   );

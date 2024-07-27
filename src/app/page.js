@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Header from "../components/Header";
-import { HeroScrollDemo } from "@/components/Hero";
+import Header from "./_components/Header";
+import { HeroScrollDemo } from "./_components/Hero";
 
 export default function Home() {
   return (
