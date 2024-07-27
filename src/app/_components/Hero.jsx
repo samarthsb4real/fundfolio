@@ -19,7 +19,7 @@ export function HeroScrollDemo() {
         }
       >
         <Image
-          src={`/linear.webp`}
+          src={`/home.png`}
           alt="hero"
           height={720}
           width={1400}
