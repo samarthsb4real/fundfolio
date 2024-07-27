@@ -50,7 +50,7 @@ function Sidebar() {
     <div className="h-screen p-6 border shadow-md">
       <Link href="/">
         <div className="flex flex-row items-center border p-4 rounded-xl shadow-md cursor-pointer space-x-2">
-          <Image src={`/favicon.ico`} width={40} height={40} />
+          <Image src={`/favicon.ico`} className="rounded-lg" width={40} height={40} />
           <span className="text-blue-700 font-bold text-2xl">FundFolio</span>
         </div>
       </Link>

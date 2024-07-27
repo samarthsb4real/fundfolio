@@ -12,7 +12,7 @@ function Header() {
   return (
     <div className="p-5 flex justify-between items-center border shadow-sm">
       <div className="flex flex-row items-center text-2xl space-x-2 ">
-        <Image src={`/favicon.ico`} height={35} width={35} />
+        <Image src={`/favicon.ico`} className="rounded-full" height={45} width={45} />
 
         <span className="font-bold">FundFolio</span>
       </div>
