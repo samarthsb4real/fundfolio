@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Header() {
   return (
@@ -9,8 +10,8 @@ export default function Header() {
         <h1 className="text-2xl font-bold">FundFolio</h1>
       </div>
       <div className="flex flex-row gap-3">
-        <Button variant="outline">Dashboard</Button>
-        <Button>Get started</Button>
+        <Button variant="outline"><Link>Dashboard</Link></Button>
+        <Button><Link>Get started</Link></Button>
       </div>
     </section>
   );
