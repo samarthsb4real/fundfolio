@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { UserButton, useUser } from "@clerk/nextjs";
+import { useUser } from "@clerk/nextjs";
 import CardInfo from "./_components/CardInfo";
 import { db } from "@/utils/dbConfig";
 import { desc, eq, getTableColumns, sql } from "drizzle-orm";
